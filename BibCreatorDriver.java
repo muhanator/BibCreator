@@ -2,11 +2,6 @@ import java.util.Scanner;
 
 import java.io.*;
 
-//-------------------------------------------------
-//Assignment 3
-//Written by: Muhammad Saad Mujtaba (40043156)
-//-------------------------------------------------
-
 /**
  * @author This class is the main part of the program. It contains all methods that will be used to convert 
  * the latex files to IEEE, ACM and NJ format. It also gets rid of any invalid files.
