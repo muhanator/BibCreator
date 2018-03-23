@@ -156,9 +156,12 @@ public class BibCreatorDriver
 			}
 			catch (FileNotFoundException e)
 			{
-				System.out.println("Could not open input file for reading, Please check if file exists! ");
+				System.out.println("Could not open input file" + (i+1) + "for reading, Please check if file exists! ");
 				System.out.println("Program will terminate after closing any opened files");
-				sc[i].close();
+				for (int j=0; j<i; j++)
+				{
+					sc[j].close();
+				}
 				System.exit(0);
 			}
 		}	
