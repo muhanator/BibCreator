@@ -57,13 +57,11 @@ public class ConversionMethods
 					}
 					else if (splitAuthor[i].contains("{"))
 					{
-//						pw.print(splitAuthor[i].replace("{", "") + " ");
 						author+=splitAuthor[i].replace("{", "");
 					}
 					
 					else if ( splitAuthor[i].contains("}"))
 					{
-//						pw.print(splitAuthor[i].replace('}', ' ') + " ");
 						author+=splitAuthor[i].replace("} ", "");
 					}
 					else if (splitAuthor[i].contains("."))
@@ -92,13 +90,11 @@ public class ConversionMethods
 			//if the character is not a { or a } or a , then write it to the file:
 				if (!(splitLine2[1].charAt(i)=='{' || splitLine2[1].charAt(i)=='}' || splitLine2[1].charAt(i)==',' || splitLine2[1].charAt(i)==' '))  
 				{
-//					pw.print(splitLine2[1].charAt(i));
 					year+=splitLine2[1].charAt(i);
 				}
 			//if the character is a comma then simply replace it with a period:
 				else if (splitLine2[1].charAt(i)==',')
 				{
-//					pw.print(".");
 					year+="";
 				}
 			}
@@ -113,7 +109,6 @@ public class ConversionMethods
 			{
 				if (!(splitLine2[1].charAt(i)=='{' || splitLine2[1].charAt(i)=='}' || splitLine2[1].charAt(i)==','))  
 				{
-//					pw.print(splitLine2[1].charAt(i));
 					title+=splitLine2[1].charAt(i);
 				}
 			//if the character is a comma then simply replace it with a period:
@@ -135,13 +130,11 @@ public class ConversionMethods
 			{
 				if (!(splitLine2[1].charAt(i)=='{' || splitLine2[1].charAt(i)=='}' || splitLine2[1].charAt(i)==','))  
 				{
-//					pw.print(splitLine2[1].charAt(i));
 					journal+= splitLine2[1].charAt(i);
 				}
 			//if the character is a comma then simply replace it with a period:
 				else if (splitLine2[1].charAt(i)==',')
 				{
-//					pw.print(".");
 					journal+= ".";
 				}
 			}
@@ -156,13 +149,11 @@ public class ConversionMethods
 			{
 				if (!(splitLine2[1].charAt(i)=='{' || splitLine2[1].charAt(i)=='}' || splitLine2[1].charAt(i)==','))  
 				{
-//					pw.print(splitLine2[1].charAt(i));
 					volume+= splitLine2[1].charAt(i);
 				}
 			//if the character is a comma then simply replace it with a period:
 				else if (splitLine2[1].charAt(i)==',')
 				{
-//					pw.print(",");
 					volume+= ",";
 				}
 			}
@@ -177,7 +168,6 @@ public class ConversionMethods
 			{
 				if (!(splitLine2[1].charAt(i)=='{' || splitLine2[1].charAt(i)=='}' || splitLine2[1].charAt(i)==','))  
 				{
-//					pw.print(splitLine2[1].charAt(i));
 					number+= splitLine2[1].charAt(i);
 				}
 			}
@@ -192,13 +182,11 @@ public class ConversionMethods
 			{
 				if (!(splitLine2[1].charAt(i)=='{' || splitLine2[1].charAt(i)=='}' || splitLine2[1].charAt(i)==',')) 
 				{
-//					pw.print(splitLine2[1].charAt(i));
 					pages+= splitLine2[1].charAt(i);
 				}
 			//if the character is a comma then simply replace it with a period:
 				else if (splitLine2[1].charAt(i)==',')
 				{
-//					pw.print(".");
 					pages+= ".";
 				}
 			}
@@ -209,18 +197,15 @@ public class ConversionMethods
 		 */
 		else if (splitLine2[0].contains("doi"))
 		{
-//			pw.print("DOI:https://doi.org/");
 			for (int i=0; i<splitLine2[1].length(); i++)
 			{
 				if (!(splitLine2[1].charAt(i)=='{' || splitLine2[1].charAt(i)=='}' || splitLine2[1].charAt(i)==','))  
 				{
-//					pw.print(splitLine2[1].charAt(i));
 					doi+=splitLine2[1].charAt(i);
 				}
 			//if the character is a comma then simply replace it with a period:
 				else if (splitLine2[1].charAt(i)==',')
 				{
-//					pw.print(".");
 					doi+=".";
 				}
 			}
@@ -450,7 +435,6 @@ public class ConversionMethods
 					}
 					else if (splitAuthor[i].contains("}"))
 					{
-//						pw.print(splitAuthor[i].replace('}', ' ') + " ");
 						author3+=splitAuthor[i].replace("}", "") + " ";
 					}
 					else if (splitAuthor[i].contains(".") && splitAuthor[i+1].contains("and"))
